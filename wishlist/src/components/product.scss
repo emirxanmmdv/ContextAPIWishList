@@ -1,0 +1,170 @@
+.products {
+  width: 100%;
+  display: grid;
+  ul {
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    .cardimgs {
+      position: relative;
+      .addtocart {
+        opacity: 0;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        width: 100%;
+        height: 30px;
+        border-bottom: 0.1rem solid #ebebeb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: peru;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .addtocart:hover {
+        background-color: red;
+        color: white;
+      }
+      .righticons {
+        position: absolute;
+        opacity: 0;
+        right: 30px;
+        top: 20px;
+        transition: 0.3s;
+        .circle {
+          width: 25px;
+          height: 25px;
+          background-color: white;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: red;
+          cursor: pointer;
+        }
+        .circle:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+    img {
+      width: 12vw;
+      height: 100%;
+    }
+  }
+
+  ul:hover .addtocart {
+    transition: 0.3s;
+    opacity: 1;
+    bottom: 0;
+  }
+
+  ul:hover .righticons {
+    transition: 0.3s;
+    opacity: 1;
+    right: 20px;
+  }
+
+  ul:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+}
+
+.allcontainer {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-left: 700px;
+  .shopSide {
+    width: 75%;
+  }
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+  button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    color: #333333;
+  }
+
+  button:hover {
+    cursor: pointer;
+    border: 1px solid #919297;
+    color: #b87145;
+  }
+}
+.dnone {
+  display: none;
+}
+#everything {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wishlist {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 30%;
+  min-height: 100%;
+  button {
+    background-color: #ebebeb;
+    border: none;
+    color: #b87145;
+    width: 100px;
+    height: 30px;
+  }
+  button:hover {
+    cursor: pointer;
+    filter: brightness(95%);
+  }
+  .texts {
+    position: relative;
+    p {
+      position: absolute;
+      top: -50px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      width: 60%;
+    }
+  }
+}
